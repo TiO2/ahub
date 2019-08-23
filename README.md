@@ -22,7 +22,7 @@ Docker swarm is able to run a collection of containers simultaneously such that 
 For using the simple configuration with HTTP Basic Authentication AHUB comes with a pre-generated password file. But of course you want to create your own. This is very quickly done, with a helper container. All you need to do is run the following command in your cloned folder (please fill in your username and password). This will create a **.htpasswd file** containing the MD5 hashed credentials for your user.
 
 ```bash
-docker run --mount type=bind,src=$pwd,dst=/var qunis/htpasswd username password
+docker run --mount type=bind,src=$PWD,dst=/var qunis/htpasswd username password
 ```
 
 ## Configuring the stack
